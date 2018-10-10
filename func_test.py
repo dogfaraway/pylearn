@@ -40,8 +40,21 @@
 #
 # for i in frange(10, 20, 0.5):
 #     print(i)
+#
+# from decimal import Decimal
+# a = Decimal('1')
+# b = Decimal('0.2')
+# print(a+b+b+b)
 
-from decimal import Decimal
-a = Decimal('1')
-b = Decimal('0.2')
-print(a+b+b+b)
+# def true(): return True
+# lambda: True
+
+# filter() map() reduce() zip()
+
+# a = [1,2,3,4,5]
+# print(list(filter(lambda x:x>2,a)))
+# print(list(map(lambda x:x+1,a)))
+# b = [1,2,3,4,5]
+# print(list(map(lambda x,y:x+y,a,b)))
+
+
