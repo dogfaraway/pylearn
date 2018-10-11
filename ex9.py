@@ -34,27 +34,30 @@ def timeer(func):
 
 x = int(input('please input integer'))
 
+#
+# @timeer
+# def func_p():
+#     p = 1
+#     for i in range(1, x + 1):
+#         p *= i
+#     print(p)
+#
+# func_p()
+
 
 @timeer
-def func_p():
-    p = 1
-    for i in range(1, x + 1):
-        p *= i
-    print(p)
-
-func_p()
-
-
-@timeer
-def fact(x):
+def fact():
     if x == 0 or x == 1:
-        return 1
+        print(1)
     else:
-        return x * fact(x - 1)
+        print((x * fact(x - 1)))
+
+fact()
+
 
 # 使用高阶函数
-from functools import reduce
-num4 = 10
-print(reduce(lambda x, y: x * y, range(1, num4 + 1)))
+# from functools import reduce
+# num4 = 10
+# print(reduce(lambda x, y: x * y, range(1, num4 + 1)))
 
-print(fact(x))
+
