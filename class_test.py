@@ -52,6 +52,12 @@ print(a2.run())
 a3 = Boss(800)
 print(a3.whoami())
 
+print('a1的类型 %s' % type(a1))
+print('a2的类型 %s' % type(a2))
+print('a3的类型 %s' % type(a3))
+
+print(isinstance(a2, Monster))
+
 # user1 = Player('tom', 100, 'warr')
 # user2 = Player('jerry', 80, 'master')
 # user1.print_role()
